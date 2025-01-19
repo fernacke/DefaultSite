@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
+    <!--Título do documento, metadata e links para stylesheets e scripts.-->
     <head>
         <title>Site Modelo</title>
-        <style>
-            body {
-                background-color: darkgrey;
-            }
-            p {
-                text-align: justify;
-                text-indent: 50px;
-            }
-        </style>
+        <meta charset="UTF-8"/>
+        <meta name="descricao" content="Site demonstrativo contruído para praticar HTML5, CSS3 e JavaScript."/>
+        <link rel="stylesheet" type="text/CSS" href="_css/estilo.css"/>
     </head>
 
+    <!--Conteúdo-->
     <body>
         <div id="interface">
             <header id="cabecalho">
-                <hgroup align="center">
+                <hgroup>
                     <h1>Site Modelo</h1>
                     <h2>Assimilando HTML5, CSS3 e JavaScript.</h2>
                 </hgroup>
@@ -30,7 +26,13 @@
                 <h2>por Fernanda</h2>
                 <h3>Atualizado em janeiro de 2025</h3>
             </hgroup>
-            <img src="_imagens/htmlwow.png" width="500"/>
+            <figure class="foto-legenda">
+                <img src="_imagens/htmlwow.jpg"/>
+                <figcaption>
+                    <h3>HTML5</h3>
+                    <p>A última versão do HTML.</p>
+                </figcaption>
+            </figure>
             <h2>O que é</h2>            
             <p>HTML (Linguagem de Marcação de HiperTexto) é o <i>bloco de construção mais básico da web</i> e define o significado e a estrutura do conteúdo da web. Outras tecnologias além do HTML geralmente são usadas para descrever a aparência/<wbr/>apresentação (CSS) ou a funcionalidade/<wbr/>comportamento (JavaScript) de uma página da web. "Hipertexto" refere-se aos links que conectam páginas da Web entre si, seja dentro de um único site ou entre sites.</p>
             <h2>Como funciona</h2>
@@ -43,7 +45,7 @@
             
             <h2>Os 10 sites mais acessados no Brasil em 2024</h2>
             [Colocar vídeo aqui]
-            <p style="text-indent: 0;">
+            <p>
                 <ol>
                     <b>1 -</b> Google.com.br <br/>
                     <b>2 -</b> Youtube.com <br/>
