@@ -6,7 +6,7 @@
     <head>
         <title>Site Modelo</title>
         <meta charset="UTF-8"/>
-        <meta name="descricao" content="Site demonstrativo contruído para praticar HTML5, CSS3 e JavaScript."/>
+        <meta name="descricao" content="Site demonstrativo construído para praticar HTML5, CSS3 e JavaScript."/>
         <link rel="stylesheet" href="_css/estilo.css"/>
     </head>
 
@@ -15,10 +15,12 @@
         <div id="interface">
             <header id="cabecalho">
                 <hgroup>
-                    <h1>SITE MODELO</h1>
-                    <h3>Assimilando HTML5, CSS3 e JavaScript.</h3>
-                </hgroup>
-                <img src="_imagens/borboleta-menor.png"/>
+                    <h1>Site Modelo</h1>
+                    <h2>Assimilando HTML5, CSS3 e JavaScript.</h2>
+                    <img src="_imagens/icones.svg">
+                </hgroup>        
+                
+                <img id="icone-site" src="_imagens/borboleta.png"/>
 
                 <!--Barra de navegação-->
                 <nav id="menu">
@@ -26,13 +28,14 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="sobre.html">Sobre</a></li>
-                        <li><a href="fotos.html">Fotos</a></li>
+                        <li><a href="exemplos.html">Exemplos</a></li>
                         <li><a href="multimidia.html">Multimídia</a></li>
                         <li><a href="fale-conosco.html">Fale Conosco</a></li>
                     </ul>
                 </nav>                
             </header>
             
+            <section id="corpo">
             <hgroup>
                 <h3>Sobre > HTML</h3>
                 <h1>Saiba mais sobre o HTML</h1>
@@ -51,10 +54,26 @@
             </figure>
             <h2>Como funciona</h2>
             <p>O HTML usa "Marcação" para colocar texto, imagem e outros conteúdos para exibição em um navegador da Web. A marcação HTML inclui "elementos" especiais em que cada elemento HTML é separado de outro em um documento por "tags", que consistem no nome do elemento entre "<" e ">".</p>
-            
+
+            <h1>Principais tags do HTML</h1>
+            <table>
+                <tr><td class="ce">&lt;head&gt;</td><td class="cd">Cabeçalho do documento</td></tr>
+                <tr><td class="ce">&lt;title&gt;</td><td class="cd">Título da página</td></tr>
+                <tr><td class="ce">&lt;body&gt;</td><td class="cd">Corpo do documento</td></tr>
+                <tr><td class="ce">&lt;header&gt;</td><td class="cd">Cabeçalho da página</td></tr>
+                <tr><td class="ce">&lt;nav&gt;</td><td class="cd">Navegação</td></tr>
+                <tr><td class="ce">&lt;main&gt;</td><td class="cd">Conteúdo principal</td></tr>
+                <tr><td class="ce">&lt;article&gt;</td><td class="cd">Artigo</td></tr>
+                <tr><td class="ce">&lt;footer&gt;</td><td class="cd">Rodapé da página</td></tr>
+            </table>
+            <div class="legenda">Principais tags de uma página em HTML</div>
+
             <h1>O que você pode fazer com um Site</h1>
             <p>Um <strong>site</strong> é um espaço na internet que serve para armazenar e divulgar informações, como textos, imagens, vídeos e áudios. Os sites podem ser usados para divulgar empresas, produtos, serviços, ideias e conhecimentos. Também podem oferecer recursos, como transações comerciais.</p>
+            [Colocar vídeo aqui]
+            </section>
 
+            <aside id="lateral">
             <h1>Mais notícias</h1>
             
             <h2>Os 10 sites mais acessados no Brasil em 2024</h2>
@@ -73,7 +92,10 @@
                     <b>10 -</b> Tiktok.com
                 </ol>
             </p>
+            </aside>
+            <footer>
+                <p>Copyright &copy; by <a href="https://github.com/frbnck" target="_blank">frbnck</a></p>
+            </footer>
         </div> 
     </body>
-    Copyright &copy; by <a href="https://github.com/frbnck" target="_blank">frbnck</a>
 </html>

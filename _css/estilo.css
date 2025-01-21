@@ -1,51 +1,97 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Dosis:wght@200..800&display=swap');
+
 body {
     background-color: darkgrey;
 }
 
 div#interface {
-    width: 1000px;
+    width: 900px;
     background-color: white;
     margin: -20px auto 0px auto;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
-    padding: 40px 10px 10px 10px;
-    font-family: 'Trebuchet MS';
+    padding: 40px 20px 20px 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', sans-serif;
 }
 
+/*Formatação do cabeçalho*/
 header#cabecalho {
-    border-bottom: 1px darkgrey solid;
+    border-bottom: 2px darkgrey solid;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+        font-size: 50px;
+        font-family: 'Dosis', 'Trebuchet MS', sans-serif;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    h2 {
+        font-family: 'Barlow Condensed', 'Trebuchet MS', sans-serif;
+        color: darkgrey;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    img#icone-site {
+        margin-left: auto;
+    }
 }
 
 /*Formatação do Menu*/
 nav#menu {
     display: block;
-}
-nav#menu h1 {
-    display: none;
-}
-nav#menu a {
-    color: black;
-    text-decoration: none;
-}
-nav#menu ul {
-    list-style: none;
-    text-transform: uppercase;
-    position: absolute;
-    top: -20px;
-    left: 50%; /*Move o menu para o meio*/
-    transform: translateX(-50%); /*Ajusta o menu para que fique centralizado*/
-}
-nav#menu li {
-    display: inline-block;
-    background-color: darkgrey;
-    padding: 10px;
-    margin: 2px;
-    transition: background-color 1s;
-}
-nav#menu li:hover {
-    background-color: rgb(255, 102, 0);
+    h1 {
+        display: none;
+    }
+    a {
+        color: black;
+        text-decoration: none;
+    }
+    ul {
+        list-style: none;
+        text-transform: uppercase;
+        position: absolute;
+        top: -20px;
+        left: 50%; /*Move o menu para o meio*/
+        transform: translateX(-50%); /*Ajusta o menu para que fique centralizado*/
+    }
+    li {
+        display: inline-block;
+        background-color: darkgrey;
+        padding: 10px;
+        margin: 2px;
+        transition: background-color 1s;
+        hover {
+            background-color: rgb(255, 102, 0);
+        }
+    }
 }
 
-/*Formatação de parágrafos*/
+section#corpo {
+    display: block;
+    width: 520px;
+    float: left;
+    border-right: 1px solid darkgrey;
+    padding-right: 15px;
+}
+
+aside#lateral {
+    display: block;
+    width: 350px;
+    float: right;
+}
+
+footer {
+    clear: both;
+    border-top: 1px solid darkgrey
+    p{
+        text-align: center;
+    }
+}
+
+/*Formatação dos parágrafos*/
 p {
     text-align: justify;
     text-indent: 50px;
@@ -56,23 +102,46 @@ figure.foto-legenda {
     position: relative;
     border: 8px solid white;
     box-shadow: 3px 3px 5px black;
-}
-figure.foto-legenda img {
-    width: 100%;
-    height: 100%;
-}
-figure.foto-legenda figcaption {
-    opacity: 0;
-    position: absolute;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    background-color: rgba(0, 0, 0, .5);
-    color: white;
-    transition: opacity 1s;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    figcaption {
+        opacity: 0;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        background-color: rgba(0, 0, 0, .5);
+        color: white;
+        transition: opacity 1s;
+    }
 }
 figure.foto-legenda:hover figcaption {
     opacity: 1;
+}
+
+table {
+    border: 1px solid darkgrey;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    td {
+        border: 1px solid darkgrey;
+        padding: 10px;
+    }
+        td.ce{
+            background-color: darkgrey;
+            font-family: monospace;
+            font-weight: bold;
+            font-size: large;
+            text-align: center;
+        }
+}
+div.legenda {
+    color: darkgrey;
+    text-align: center;
+    margin-top: 10px;
 }
