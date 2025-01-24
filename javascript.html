@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="_css/estilo.css"/>
+        <script src="_javascript/funcoes.js"></script>
+    </head>
+
+    <body>
+        <div id="interface">
+            <header id="cabecalho">
+                <hgroup>
+                    <h1>Site Modelo</h1>
+                    <h2>Assimilando HTML5, CSS3 e JavaScript.</h2>
+                    <img src="_imagens/icones.svg">
+                </hgroup>        
+                
+                <img id="icone-site" src="_imagens/borboleta.png"/>
+
+                <!--Barra de navegação-->
+                <nav id="menu">
+                    <h1>Menu Principal</h1>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="html5.html">HTML5</a></li>
+                        <li><a href="css3.html">CSS3</a></li>
+                        <li><a href="javascript.html">JavaScript</a></li>
+                        <li><a href="fale-comigo.html">Fale Comigo</a></li>
+                    </ul>
+                </nav>                
+            </header>
+            
+            <section id="corpo">
+            <article id="principal">
+            <hgroup id="cabecalho-artigo">
+                <h3>Home &nbsp;>&nbsp; JavaScript</h3>
+                <h1>Exemplos</h1>
+                <h2>por Fernanda</h2>
+                <h3>Atualizado em janeiro de 2025</h3>
+            </hgroup>
+                <h2>Exemplo 1</h2>
+                <p>Neste exemplo, cria-se um buraco na interface do site depois de um clique. Clique no espaço em branco abaixo para entender melhor.</p>
+                <figure class="quebrado">
+                    <img id="estado" src="_imagens/blank.png" onclick="quebra()"/>
+                </figure>
+                <h2>Exemplo 2</h2>
+                <p>Neste, mostra-se uma imagem diferente dependendo de qual das caixas o cursor do mouse é posicionado sobre.</p>
+                <ul id="exemplo">
+                    <li onmouseover="mudafoto('_imagens/daisy.png')" onmouseout="mudafoto('_imagens/blank.png')">Flor</li>
+                    <li onmouseover="mudafoto('_imagens/borboleta-exemplo.png')" onmouseout="mudafoto('_imagens/blank.png')">Borboleta</li>
+                </ul>
+                </nav>         
+                <figure class="opcoes">
+                    <img id="escolha" src="_imagens/blank.png"/>
+                </figure>
+            </article>
+            </section>  
+            <aside id="lateral">
+                <h2>Sobre</h2>
+                
+                <h1>Este é meu primeiro site!</h1>
+                <p>Ele foi construído princi&shy;pal&shy;mente com base nas aulas do <a href="https://www.cursoemvideo.com/" target="_blank">Professor Guanabara</a> sobre HTML5.</p> 
+                <p>O propósito era construir um site sobre o <i>Google Glass</i>, mas eu resolvi fazer uma abordagem indi&shy;vidualizada.</p>
+                <p>Assim, utilizei seus ensi&shy;na&shy;mentos de forma mais inde&shy;pen&shy;dente, tentando aplicar ao máximo meus <b>primeiros apren&shy;di&shy;zados</b> sobre:</p>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>                  
+                    </ul>
+                <p>Sei que ainda tenho um longo caminho a percorrer para me tornar uma boa programadora, mas estou orgulhosa do resultado!</p>
+            </aside>          
+            <footer>
+                <p>Copyright &copy; by <a href="https://github.com/frbnck" target="_blank">frbnck</a></p>
+            </footer>
+        </div> 
+    </body>
+</html>
