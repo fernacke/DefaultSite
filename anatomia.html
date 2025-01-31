@@ -1,69 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Anatomia de um Site</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Dosis:wght@200..800&display=swap');
-        body {
-            font-family: 'Trebuchet MS', sans-serif;
-            font-size: 10pt;
-            white-space: normal;
-            overflow: hidden;
-        }
-        article {
-            margin-bottom: 800px;
-        }
-        h1 {
-            font-family: 'Barlow Condensed', 'Trebuchet MS', sans-serif;
-            font-size: 15pt;
-            background-color: darkgrey;
-            padding: 5px 0px 5px 0px;
-            margin: 20px 0px 20px 0px;
-            text-align: center;
-            font-size: 15pt;
-        }
-        h2 {
-            font-size: 13pt;
-            text-align: center;
-            margin-top: 50px;
-        }
-        h3 {
-            text-align: center;
-        }
-        figure {
-            display: flex;
-            justify-content: center;
-            margin: 30px;
-        }
-    </style>
-</head>
-<body>
-    <article id="topo"> 
-        <header>
-            <h3>Clique sobre as áreas em cinza</h3>
-        </header>
-        <figure>
-            <img src="_imagens/seta.png" width="100px">
-        </figure>
-    </article>
-    <article id="html-part">
-        <header>
-            <h1>HTML</h1>
-            <h2>Estrutura e conteúdo.</h2>
-        </header>        
-    </article>
-    <article id="css-part">
-        <header>
-            <h1>CSS</h1>
-            <h2>Aparência e apresentação.</h2>
-        </header>
-    </article>
-    <article id="javascript-part">
-        <header>
-            <h1>JavaScript</h1>
-            <h2>Funcionalidade e comportamento.</h2>
-        </header>
-    </article>
-</body>
+
+    <!--Título do documento, metadata e links para stylesheets e scripts.-->
+    <head>
+        <title>Site Modelo</title>
+        <meta charset="utf-8"/>
+        <meta name="descricao" content="Site demonstrativo construído para praticar HTML5, CSS3 e JavaScript."/>
+        <link rel="stylesheet" href="_css/estilo.css"/>
+        <link rel="stylesheet" href="_css/anatomia.css"/>
+    </head>
+
+    <!--Conteúdo-->
+    <body>
+        <div id="interface">
+            <header id="cabecalho">
+                <hgroup>
+                    <h1>Site Modelo</h1>
+                    <h2>Assimilando HTML5, CSS3 e JavaScript.</h2>
+                    <img src="_imagens/icones.svg">
+                </hgroup>        
+                
+                <img id="icone-site" src="_imagens/borboleta.png"/>
+                
+                <!--Barra de navegação-->
+                <nav id="menu">
+                    <h1>Menu Principal</h1>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="artigo.html">Artigo</a></li>
+                        <li><a href="anatomia.html">Anatomia</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="interaja.html">Interaja</a></li>
+                        <li><a href="fale-comigo.html">Fale Comigo</a></li>
+                    </ul>
+                </nav>                
+            </header>
+            
+            <section id="corpo-full">
+
+            <article>
+                <hgroup id="cabecalho-artigo">
+                    <h3>Home &nbsp;>&nbsp; Anatomia</h3>
+                    <h1>Anatomia de um Site</h1>
+                </hgroup>
+
+                <p id="pagina-css3">Clique nos círculos cinzas da imagem para saber como é a anatomia de um website.</p>
+
+                <section id="conteudo">        
+                    <img id="mapa-anatomico" src="_imagens/site-anatomy.png" width="450" usemap="#mapa-img">
+                    <map name="mapa-img">
+                        <area shape="circle" coords="315,120,40" href="descricao.html#html-part" target="janela">
+                        <area shape="circle" coords="339,305,40" href="descricao.html#css-part" target="janela">
+                        <area shape="circle" coords="88,120,40" href="descricao.html#javascript-part" target="janela">
+                    </map>
+                    <iframe src="descricao.html" name="janela" id="info"></iframe>
+                </section>
+           
+            </article>
+
+            </section>   
+
+            <footer>
+                <p>Copyright &copy; by <a href="https://github.com/fernacke" target="_blank">fernacke</a></p>
+            </footer>
+        </div> 
+    </body>
 </html>
