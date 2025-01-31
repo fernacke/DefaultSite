@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+div#multimidia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+video#mulher {
+    max-width: 100%;
+    height: auto;
+}
