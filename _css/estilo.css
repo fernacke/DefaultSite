@@ -284,6 +284,15 @@ footer a:hover {
     text-decoration: underline;
 }
 
+#boas-vindas {
+    text-align: center;
+}
+
+.info {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 /* PÁGINA CSS3 */
 
 p#pagina-css3 {

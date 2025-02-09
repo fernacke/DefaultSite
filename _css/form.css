@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+#faleCmg {
+    text-align: center;
+}
+
+form {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+fieldset {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-right: 20px;
+}
+
+input [type="radio"] {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#fSexo {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#radLabel {
+    margin-left: 20px;
+}
+
+#coment {
+    display: flex;
+    justify-content: center;
+}
+
+#iMsg {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#enviar {
+    text-indent: 0px;
+    text-align: center;
+    margin-bottom: 30px;
+}

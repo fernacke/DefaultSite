@@ -8,6 +8,7 @@
         <meta charset="utf-8"/>
         <meta name="descricao" content="Site demonstrativo construído para praticar HTML5, CSS3 e JavaScript."/>
         <link rel="stylesheet" href="_css/estilo.css"/>
+        <link rel="stylesheet" href="_css/form.css"/>
     </head>
 
     <!--Conteúdo-->
@@ -27,7 +28,7 @@
                     <h1>Menu Principal</h1>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="html5.html">HTML5</a></li>
+                        <li><a href="artigo.html">Artigo</a></li>
                         <li><a href="anatomia.html">Anatomia</a></li>
                         <li><a href="galeria.html">Galeria</a></li>
                         <li><a href="interaja.html">Interaja</a></li>
@@ -36,11 +37,67 @@
                 </nav>                
             </header>
             
-            <h1>Fale Comigo</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi atque iusto culpa tempore velit aspernatur eius alias in fugiat sunt ipsa delectus eveniet ea dicta modi, enim vitae dolore beatae?</p>
+            <hgroup id="cabecalho-artigo">
+                <h3>Home &nbsp;>&nbsp; Fale Comigo</h3>
+                <h1 id="faleCmg">Fale Comigo</h1>
+            </hgroup>
+
+            <form method="post" id="fContato">
+                <fieldset>
+                    <legend>Identificação</legend>
+                    <p><label for="iNome">Nome:</label><input type="text" name="nNome" id="iNome" size="70" maxlength="100" placeholder="Nome completo"></p>
+                    <p><label for="iEmail">E-mail:</label><input type="email" name="nEmail" id="iEmail" size="50" maxlength="50" placeholder="exemplo@email.com"></p>
+                    <p id="pNasc"><label for="iNasc">Data de nascimento:</label><input type="date" name="nNasc" id="iNasc"></p>
+                    <fieldset id="fSexo">
+                        <legend>Sexo:</legend>
+                            <input type="radio" name="nSexo" id="iFem"><label id="radLabel" for="iFem">Feminino</label>
+                            <input type="radio" name="nSexo" id="iMasc"><label id="radLabel" for="iMasc">Masculino</label>
+                    </fieldset>
+                </fieldset>
+                <fieldset>
+                    <legend>Procedência</legend>
+                    <p><label for="iCidade">Cidade:</label><input type="text" name="nCidade" id="iCidade" size="50" maxlength="50"></p>
+                    <p><label for="iEstado">Estado:</label>
+                        <select name="nEst" id="iEst">
+                            <option selected></option>
+                            <option>Acre (AC)</option>
+                            <option>Alagoas (AL)</option>
+                            <option>Amapá (AP)</option>
+                            <option>Amazonas (AM)</option>
+                            <option>Bahia (BA)</option>
+                            <option>Ceará (CE)</option>
+                            <option>Distrito Federal (DF)</option>
+                            <option>Espírito Santo (ES)</option>
+                            <option>Goiás (GO)</option>
+                            <option>Maranhão (MA)</option>
+                            <option>Mato Grosso (MT)</option>
+                            <option>Mato Grosso do Sul (MS)</option>
+                            <option>Minas Gerais (MG)</option>
+                            <option>Pará (PA)</option>
+                            <option>Paraíba (PB)</option>
+                            <option>Paraná (PR)</option>
+                            <option>Pernambuco (PE)</option>
+                            <option>Piauí (PI)</option>
+                            <option>Rio de Janeiro (RJ)</option>
+                            <option>Rio Grande do Norte (RN)</option>
+                            <option>Rio Grande do Sul (RS)</option>
+                            <option>Rondônia (RO)</option>
+                            <option>Roraima (RR)</option>
+                            <option>Santa Catarina (SC)</option>
+                            <option>São Paulo (SP)</option>
+                            <option>Sergipe (SE)</option>
+                            <option>Tocantins (TO)</option>
+                        </select></p>
+                </fieldset>
+                <fieldset id="coment">
+                    <legend>Mensagem</legend>
+                    <textarea type="text" name="nMsg" id="iMsg" cols="60" rows="5" placeholder="O que achou do meu Site?"></textarea>
+                </fieldset>
+                <p id="enviar"><input type="submit"></p>
+            </form>
 
             <footer>
-                <p>Copyright &copy; by <a href="https://github.com/frbnck" target="_blank">frbnck</a></p>
+                <p>Copyright &copy; by <a href="https://github.com/fernacke" target="_blank">fernacke</a></p>
             </footer>
         </div> 
     </body>
