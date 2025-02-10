@@ -5,17 +5,33 @@
 }
 
 form {
-    padding-left: 100px;
-    padding-right: 100px;
+    width: 600px;
+    margin: auto;
 }
 
 fieldset {
     margin-top: 20px;
     margin-bottom: 20px;
+    border-color: lightgrey;
+}
+
+legend {
+    font-family: 'Dosis', 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    color: rgb(100, 100, 100);
 }
 
 label {
     margin-right: 20px;
+}
+
+input, textarea {
+    text-indent: 5px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+input:hover, textarea:hover {
+    background-color: rgb(250, 255, 152);
 }
 
 input [type="radio"] {
@@ -26,6 +42,12 @@ input [type="radio"] {
 #fSexo {
     margin-top: 5px;
     margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+#opSexo {
+    padding-inline: 40px;
 }
 
 #radLabel {

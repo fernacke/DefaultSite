@@ -203,7 +203,7 @@ figure.foto-legenda figcaption {
         margin: 0px;
     } 
     p {
-        margin: 10px;
+        text-indent: 0px;
     }
 }
 

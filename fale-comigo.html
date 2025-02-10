@@ -45,13 +45,17 @@
             <form method="post" id="fContato">
                 <fieldset>
                     <legend>Identificação</legend>
-                    <p><label for="iNome">Nome:</label><input type="text" name="nNome" id="iNome" size="70" maxlength="100" placeholder="Nome completo"></p>
+                    <p><label for="iNome">Nome:</label><input type="text" name="nNome" id="iNome" size="60" maxlength="80" placeholder="Nome completo"></p>
                     <p><label for="iEmail">E-mail:</label><input type="email" name="nEmail" id="iEmail" size="50" maxlength="50" placeholder="exemplo@email.com"></p>
                     <p id="pNasc"><label for="iNasc">Data de nascimento:</label><input type="date" name="nNasc" id="iNasc"></p>
                     <fieldset id="fSexo">
                         <legend>Sexo:</legend>
+                            <div id="opSexo">
                             <input type="radio" name="nSexo" id="iFem"><label id="radLabel" for="iFem">Feminino</label>
+                            </div>
+                            <div id="opSexo">
                             <input type="radio" name="nSexo" id="iMasc"><label id="radLabel" for="iMasc">Masculino</label>
+                            </div>
                     </fieldset>
                 </fieldset>
                 <fieldset>
