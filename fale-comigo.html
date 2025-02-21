@@ -42,14 +42,25 @@
                 <h1 id="faleCmg">Fale Comigo</h1>
             </hgroup>
 
+            <!--Formulário-->
             <form method="post" id="fContato">
+                <!--Elementos relacionados-->
                 <fieldset>
                     <legend>Identificação</legend>
-                    <p><label for="iNome">Nome:</label><input type="text" name="nNome" id="iNome" size="60" maxlength="80" placeholder="Nome completo"></p>
-                    <p><label for="iEmail">E-mail:</label><input type="email" name="nEmail" id="iEmail" size="50" maxlength="50" placeholder="exemplo@email.com"></p>
-                    <p id="pNasc"><label for="iNasc">Data de nascimento:</label><input type="date" name="nNasc" id="iNasc"></p>
+                    <div class="cTexto">
+                        <input type="text" name="nNome" id="iNome" maxlength="70" required>
+                        <label for="iNome">Nome completo</label>
+                    </div>
+                    <div class="cTexto">
+                        <input type="email" name="nEmail" id="iEmail" maxlength="50" required>
+                        <label for="iEmail">E-mail</label>
+                    </div>
+                    <div id="nDate">
+                        <label for="iNasc">Data de nascimento</label>
+                        <input type="date" name="nNasc" id="iNasc"></p>
+                    </div>
                     <fieldset id="fSexo">
-                        <legend>Sexo:</legend>
+                        <legend id="lSexo">Sexo</legend>
                             <div id="opSexo">
                             <input type="radio" name="nSexo" id="iFem"><label id="radLabel" for="iFem">Feminino</label>
                             </div>
@@ -58,10 +69,14 @@
                             </div>
                     </fieldset>
                 </fieldset>
-                <fieldset>
+                <fieldset id="procedencia">
                     <legend>Procedência</legend>
-                    <p><label for="iCidade">Cidade:</label><input type="text" name="nCidade" id="iCidade" size="50" maxlength="50"></p>
-                    <p><label for="iEstado">Estado:</label>
+                    <div class="cTexto">
+                        <input type="text" name="nCidade" id="iCidade" maxlength="50" required>
+                        <label for="iCidade">Cidade</label>
+                    </div>
+                    <div id="divEstado">
+                        <label for="iEstado">Estado</label>
                         <select name="nEst" id="iEst">
                             <option selected></option>
                             <option>Acre (AC)</option>
@@ -91,13 +106,16 @@
                             <option>São Paulo (SP)</option>
                             <option>Sergipe (SE)</option>
                             <option>Tocantins (TO)</option>
-                        </select></p>
+                        </select>
+                    </div>
                 </fieldset>
                 <fieldset id="coment">
                     <legend>Mensagem</legend>
-                    <textarea type="text" name="nMsg" id="iMsg" cols="60" rows="5" placeholder="O que achou do meu Site?"></textarea>
+                    <textarea type="text" name="nMsg" id="iMsg" cols="60" rows="5" placeholder="O que você achou do meu Site?"></textarea>
                 </fieldset>
-                <p id="enviar"><input type="submit"></p>
+                <div id="enviar">
+                    <input type="submit">
+                </div>
             </form>
 
             <footer>

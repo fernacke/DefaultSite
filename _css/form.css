@@ -1,71 +1,167 @@
 @charset "UTF-8";
 
+/*Título do formulário*/
 #faleCmg {
     text-align: center;
 }
 
+/*Define a largura e centraliza horizontalmente o conteúdo*/
 form {
     width: 600px;
     margin: auto;
 }
 
+/*Espaça verticalmente os campos de elementos relacionados, define a cor da borda e arredonda os cantos*/
 fieldset {
     margin-top: 20px;
     margin-bottom: 20px;
     border-color: lightgrey;
+    border-radius: 5px;
 }
 
+/*Estilo das legendas dos fieldsets*/
 legend {
     font-family: 'Dosis', 'Trebuchet MS', sans-serif;
     font-weight: 600;
     color: rgb(100, 100, 100);
 }
 
-label {
-    margin-right: 20px;
-}
-
+/*Estilo do texto das caixas de input e área de texto*/
 input, textarea {
     text-indent: 5px;
     font-family: 'Trebuchet MS', sans-serif;
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
-input:hover, textarea:hover {
-    background-color: rgba(211, 211, 211, 0.5);
+/*Estilo da caixa de input dos tipos texto e e-mail*/
+input[type="text"], input[type="email"] {
+    width: 520px;
+    height: 25px;
+    margin-inline: 20px;
+    margin-block: 10px;
+    border-radius: 5px;
+    outline: none;
 }
 
-input [type="radio"] {
-    margin-top: 20px;
-    margin-bottom: 20px;
+/*Inputs tipo texto*/
+.cTexto {
+    position: relative;    
 }
 
-#fSexo {
+/*Etiqueta (estilo inicial)*/
+.cTexto label {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 30px;
+    pointer-events: none;
+    transition: .3s;
+}
+
+/*Etiqueta (estilo quando em uso)*/
+.cTexto input:focus ~ label, 
+.cTexto input:valid ~ label {
+    top: 10px;
+    background-color: white;
+    font-family: 'Dosis', 'Trebuchet MS', sans-serif;
+    font-size: small;
+    font-weight: 600;
+    padding-inline: 5px;
+}
+
+/*Data de nascimento*/
+#nDate {
     margin-top: 5px;
-    margin-bottom: 5px;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+#iNasc {
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 30px;
+}
+
+/*Fieldset de sexo*/
+#fSexo {
+    border-color: black;
+    margin-block: 5px;
+    margin-inline: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lSexo {
+    color: black;
 }
 
 #opSexo {
     padding-inline: 40px;
+    transform: translateY(-20%);
 }
 
 #radLabel {
     margin-left: 20px;
 }
 
+/*Fieldset de estado*/
+
+#divEstado {
+    margin-block: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#iEst {
+    height: 30px;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: black;
+    margin-left: 30px;
+}
+
+/*Fieldset da procedência*/
+#procedencia {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+/*Fielset do comentário*/
 #coment {
     display: flex;
     justify-content: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 #iMsg {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-block: 20px;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 5px;
 }
 
+/*Botão de enviar*/
 #enviar {
-    text-indent: 0px;
-    text-align: center;
+    display: flex;
+    justify-content: center; /*Centraliza horizontalmente*/
     margin-bottom: 30px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    font-family: 'Dosis', 'Trebuchet MS', sans-serif;
+    font-size: large;
+    font-weight: bold;
+    border: none;
+    background-color: darkgrey;
+    transition: 1s;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(255, 102, 0);
 }
